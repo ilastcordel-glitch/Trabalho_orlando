@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GolpeScan</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<header>
+  <h1>Golpe<span>Scan</span></h1>
+  <p>Detecte mensagens suspeitas em segundos</p>
+</header>
+
+<main>
+
+<section class="scanner-box">
+
+  <textarea id="inputText" placeholder="Cole aqui uma mensagem suspeita..."></textarea>
+
+  <button id="scanButton">
+    ANALISAR
+  </button>
+
+</section>
+
+<section class="result-box">
+
+  <h2>Resultado</h2>
+
+  <div id="riskLevel">
+    Aguardando análise...
+  </div>
+
+  <div class="risk-bar">
+    <div id="riskFill"></div>
+  </div>
+
+  <div id="details"></div>
+
+</section>
+
+<section class="tips">
+
+  <h2>Sinais comuns de golpes</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Links suspeitos</h3>
+      <p>bit.ly, tinyurl e links estranhos costumam esconder páginas falsas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Urgência</h3>
+      <p>Golpistas usam pressão emocional para impedir que você pense.</p>
+    </div>
+
+    <div class="card">
+      <h3>PIX e prêmios</h3>
+      <p>Promessas exageradas e dinheiro fácil são sinais clássicos.</p>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <p>Trabalho do Orlandinho • Segurança Digital<br><br></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
